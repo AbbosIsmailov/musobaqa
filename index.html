@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Car Rental</title>
+      <link rel="stylesheet" href="./ikonka/font-awesome.min.css">
+      <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+      <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+      <header class="container">
+            <nav>
+                  <div class="header-nav">
+                        <div class="nav-left">
+                              <img class="nav-left_logo" src="./images/Header-logo.png" alt="Header-logo">
+                              <ul class="nav-left_list">
+                                    <li class="nav-left_item">Categories</li>
+                                    <li class="nav-left_item" id="about">
+                                          About Us <i class="fa fa-angle-down"></i>
+                                          <ul class="about-list">
+                                                <li>News</li>
+                                                <li>Careers</li>
+                                                <li>Locations</li>
+                                          </ul>
+                                    </li>
+                                    <li class="nav-left_item" id="help">
+                                          Help center <i class="fa fa-angle-down"></i>
+                                          <ul class="help-list">
+                                                <li>FAQ</li>
+                                                <li class="help-link">Contact us</li>
+                                          </ul>
+                                    </li>
+                              </ul>
+                              <span id="fa-bars" class="fa fa-bars"></span>
+                        </div>
+                        <div class="nav-right">
+                              <ul class="nav-right_list">
+                                    <li>
+                                          <span class="call-number">+1 855 420 0000</span>
+                                    </li>
+                                    <li>
+                                          <button class="fa fa-moon-o night-light" id="night-light"></button>
+                                    </li>
+                                    <li>
+                                          <button class="nav-right_login">
+                                                Login <i class="fa fa-sign-in"></i>
+                                          </button>
+                                          <!-- Modal -->
+                                          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                                data-bs-keyboard="false" tabindex="-1"
+                                                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                      <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                  <div>
+                                                                        <h2 class="modal-title fs-5"
+                                                                              id="staticBackdropLabel">
+                                                                              Login
+                                                                        </h2>
+                                                                        <p class="modal-text">
+                                                                              Use the email and password that you login
+                                                                        </p>
+                                                                  </div>
+                                                                  <button class="fa fa-close" data-bs-dismiss="modal"
+                                                                        aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                  <input class="w-100" type="email" placeholder="Email">
+                                                                  <input class="mt-2 w-100" type="password"
+                                                                        placeholder="Password">
+                                                                  <span>Forgot password</span>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                  <h5 class="mt-4">I want to create an account</h5>
+                                                                  <button type="button"
+                                                                        class="btn btn-success w-100 rounded-5 mt-3">
+                                                                        Login <i class="fa fa-sign-in"></i>
+                                                                  </button>
+                                                            </div>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                    </li>
+                              </ul>
+                        </div>
+                  </div>
+            </nav>
+      </header>
+      <section class="modal-open-media">
+            <div class="modal-box">
+                  <div class="media-modal-header">
+                        <img class="logo-media" src="./images/Header-logo.png" alt="logo">
+                        <button class="fa fa-close media-close-box"></button>
+                  </div>
+                  <div class="media-modal-body">
+                        <ul class="media-modal-list">
+                              <li class="media-modal-item">Categories</li>
+                              <li class="media-modal-item">
+                                    About Us
+                                    <div>
+                                          <span>News</span>
+                                          <span>Careers</span>
+                                          <span>Locations</span>
+                                    </div>
+                              </li>
+                              <li class="media-modal-item">
+                                    Help center
+                                    <div>
+                                          <span>FAQ</span>
+                                          <span>Contact us</span>
+                                    </div>
+                              </li>
+                              <span class="call-number">+1 855 420 0000</span>
+                        </ul>
+                  </div>
+                  <div class="media-modal-footer">
+                        <button class="fa fa-moon-o night-light"></button>
+                        <button class="nav-right_login" id="media-login-enter" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                              Login <i class="fa fa-sign-in"></i>
+                        </button>
+                  </div>
+            </div>
+      </section>
+      <section class="intro container">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                  <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                              class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                              aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                              aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                        <div class="carousel-item active">
+                              <div class="intro-dark">
+                                    <div class="carousel-caption">
+                                          <h2 class="carousel-name">Compact cars</h2>
+                                          <p class="carousel-text">
+                                                Rent cars as you are comfortable and where you are comfortable.
+                                          </p>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="carousel-item">
+                              <div class="intro-dark">
+                                    <div class="carousel-caption">
+                                          <h2 class="carousel-name">VANS</h2>
+                                          <p class="carousel-text">
+                                                Rent cars as you are comfortable and where you are comfortable.
+                                          </p>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="carousel-item">
+                              <div class="intro-dark">
+                                    <div class="carousel-caption">
+                                          <h2 class="carousel-name">Sports Cars</h2>
+                                          <p class="carousel-text">
+                                                Rent cars as you are comfortable and where you are comfortable.
+                                          </p>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+                  <button class="carousel-control-prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                  </button>  
+            </div>
+            <div class="search-box">
+                  <form class="search-form">
+                        <input type="text" class="find-car border" placeholder="Find the car of your dreams">
+                        <button class="fa fa-search"></button>
+                  </form>
+            </div>
+      </section>
+
+
+      <script src="./bootstrap/js/bootstrap.js"></script>
+      <script src="./js/header.js"></script>
+      <script src="./js/intro.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+@mixin button_all {
+  border-radius: 100px;
+}
+
+@mixin list {
+  display: flex;
+  list-style: none;
+}
+
+@mixin list-none {
+  margin-top: 15px;
+  position: absolute;
+  list-style: none;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  width: 147px;
+  display: grid;
+  justify-content: center;
+  li{
+      width: 127px;
+      margin: 15px 40px 0 20px;
+  }
+}
+
+@mixin night-light {
+  width: 58px;
+  height: 58px;
+  margin: 0 24px;
+  background: #f5f5f5;
+  padding: 18px;
+  border: none;
+}
+@mixin call-number{
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+}
+
+@mixin nav-right_login{
+  background: #299764;
+  width: 142px;
+  height: 58px;
+  padding: 18px 30px;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+
+  .fa-sign-in {
+    margin-left: 5px;
+  }
+}

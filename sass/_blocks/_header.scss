@@ -1,0 +1,257 @@
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  align-items: center;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+
+  .nav-left_logo {
+    height: 40px;
+  }
+}
+
+.nav-left_list {
+  @include list;
+  margin-top: 25px;
+}
+
+.nav-left_item {
+  position: relative;
+  margin-left: 42px;
+  font-size: 18px;
+
+  i {
+    transition: 0.5s;
+  }
+
+  .fa-angle-down {
+    margin-left: 14px;
+  }
+
+  .about-list {
+    @include list-none;
+    right: -20px;
+    height: 200px;
+    display: none;
+
+    li {
+      height: 58px;
+    }
+  }
+
+  .help-list {
+    @include list-none;
+    right: -5px;
+    height: 130px;
+    display: none;
+
+    li {
+      height: 30px;
+    }
+
+    .help-link {
+      position: absolute;
+      top: 70px;
+      left: -5px;
+    }
+  }
+}
+
+.nav-left_item:hover {
+  i {
+    transform: rotate(180deg);
+  }
+
+  .about-list {
+    display: grid;
+    z-index: 2;
+    background: #fff;
+    color: #000;
+  }
+
+  .help-list {
+    display: grid;
+    z-index: 2;
+    background: #fff;
+    color: #000;
+  }
+}
+
+.nav-right {
+  padding-top: 25px;
+}
+
+.nav-right_list {
+  @include list;
+  align-items: center;
+
+  .call-number {
+    @include call-number;
+  }
+
+  .night-light {
+    @include button_all;
+    @include night-light;
+  }
+
+  .night-btn {
+    background: #333 !important;
+    color: #fff;
+  }
+
+  .nav-right_login {
+    @include button_all;
+    @include nav-right_login;
+  }
+}
+.modal-open-media{
+  display: none;
+}
+.fa-bars{
+  display: none;
+}
+@media only screen and (max-width: 1200px) {
+  .nav-left_list {
+    margin-left: -35px;
+  }
+
+  .nav-left_item {
+    margin-left: 10px;
+
+    .fa-angle-down {
+      margin-left: 1px;
+    }
+  }
+
+  .nav-right_list {
+    .night-light {
+      margin: 0 14px;
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .nav-left_list {
+    display: none;
+  }
+
+  .nav-right_list {
+    display: none;
+  }
+
+  .nav-left {
+    width: 100%;
+    justify-content: space-between;
+
+    .nav-left_logo {
+      margin: 0 10px;
+    }
+
+    .fa-bars {
+      display: block;
+      font-size: 25px;
+      margin: 5px 15px 0 0;
+    }
+  }
+
+  .modal-open-media {
+    position: relative;
+    animation-name: media-box-animation;
+    animation-duration: 0.8s;
+  }
+  @keyframes media-box-animation {
+    0% {right: -200px;}
+    100% { right: 0;}
+  }
+
+  .modal-box {
+    position: absolute;
+    top: -100px;
+    right: 0px;
+    height: 100vh;
+    width: 50%;
+    z-index: 2;
+    background: #fff;
+    .media-modal-header {
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100px;
+      margin: auto;
+      .logo-media{
+        height: 40px;
+      }
+      .fa-close {
+        background: #F5F5F5;
+        border-radius: 100px;
+        width: 58px;
+        height: 58px;
+        border: none;
+      }
+    }
+  }
+  .media-modal-body{
+    .media-modal-list{
+      list-style: none;
+      li{
+        font-size: 28px;
+        margin-top: 32px;
+        margin-bottom: 25px;
+        div{
+          font-size: 24px;
+          color: #555;
+          margin-left: 10px;
+          span{
+            display: block;
+          }
+        }
+      }
+      .call-number{
+        @include call-number;
+        font-size: 24px;
+      }
+    }
+  }
+  .media-modal-footer{
+    position: absolute;
+    bottom: 30px;
+    width: 90%;
+    margin: auto;
+    .night-light{
+      @include button_all;
+      @include night-light;
+    }
+    .nav-right_login{
+      border-radius: 100px;
+      @include nav-right_login;
+    }
+  }
+}
+@media only screen and (max-width: 576px) {
+  .modal-box{
+    width: 90% !important;
+    z-index: 3;
+    .media-modal-header{
+      .fa-close{
+        width: 48px;
+        height: 48px;
+      }
+    }
+    .media-modal-body{
+      .media-modal-list{
+        li{
+          font-size: 24px;
+          div{
+            font-size: 20px;
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+}

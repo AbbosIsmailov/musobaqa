@@ -1,0 +1,237 @@
+.intro {
+  height: 500px;
+}
+
+.carousel-item {
+  height: 500px;
+}
+
+.carousel-item:nth-child(1) {
+  background: url("../../images/banner-malibu.png") center center/cover;
+  border-radius: 20px;
+}
+
+.carousel-item:nth-child(2) {
+  background: url('../../images/vans-banner.png') center center/cover;
+  border-radius: 20px;
+}
+
+.carousel-item:nth-child(3) {
+  background: url("../../images/sports-cars-banner.png") center center/cover;
+  border-radius: 20px;
+}
+
+.carousel-caption {
+  top: 50px;
+}
+
+.intro-dark {
+  border-radius: 20px;
+  height: 100%;
+  background: rgba(#000000, 0.3);
+}
+
+.carousel-name {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.carousel-text {
+  width: 416px;
+  height: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  margin: auto;
+}
+
+.modal-header {
+  div {
+    width: 342px;
+    margin: auto;
+
+    h2 {
+      text-align: center;
+      color: #000000;
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 44px;
+    }
+
+    p {
+      text-align: center;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #555555;
+    }
+  }
+
+  button {
+    position: relative;
+    top: -10px;
+    background: #F5F5F5;
+    border: none;
+    border-radius: 100px;
+    padding: 18px;
+    width: 50px;
+    height: 50px;
+    font-weight: 100;
+  }
+}
+
+.modal-body {
+  input {
+    display: block;
+    height: 50px;
+    padding: 18px 30px;
+    border: 1.5px solid #e5e7ea;
+    border-radius: 82px;
+  }
+
+  span {
+    float: right;
+    font-size: 14px;
+    line-height: 17px;
+    color: #555555;
+  }
+}
+
+.modal-footer {
+  h5 {
+    font-size: 16px;
+    margin: auto;
+  }
+
+  button {
+    height: 50px;
+    font-size: 18px;
+  }
+}
+
+.search-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.search-form {
+  position: relative;
+  top: -30px;
+
+  .find-car {
+    width: 600px;
+    height: 66px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 100px;
+    padding: 22px 30px;
+    outline: none;
+
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    color: #555555;
+  }
+
+  .fa-search {
+    position: absolute;
+    right: 1%;
+    top: 5%;
+    width: 58px;
+    height: 58px;
+    background: #299764;
+    border-radius: 100px;
+    border: none;
+    color: #FFFFFF;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .carousel-item:nth-child(1) {
+    background: url('../../images/malibu-banner-tablet.png') center center/cover;
+  }
+
+  .search-form {
+    .find-car {
+      width: 500px;
+      height: 56px;
+    }
+
+    .fa-search {
+      width: 50px;
+      height: 50px;
+      right: 0.5%;
+    }
+  }
+
+  .modal-content {
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .search-form {
+    .find-car {
+      width: 450px;
+      height: 55px;
+    }
+
+    .fa-search {
+      width: 50px;
+      height: 50px;
+      right: 0.5%;
+    }
+  }
+
+  .modal-content {
+    width: 90%;
+    margin: 100px auto;
+  }
+
+  .carousel-caption {
+    display: block !important;
+
+    .carousel-text {
+      width: 356px;
+    }
+  }
+
+  .modal-box {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .search-form {
+    .find-car {
+      width: 350px;
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    .fa-search {
+      right: 1%;
+      top: 3%;
+    }
+  }
+
+  .carousel-indicators {
+    left: 0;
+  }
+
+  .carousel-name {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .carousel-text {
+    font-size: 12px;
+    line-height: 15px;
+    width: 283px !important;
+  }
+}
